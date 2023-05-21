@@ -8,7 +8,6 @@ namespace AsisPeMov2.datos
 	{
 		public int tbl_ls_id { get; set; }
 		public DateTime tbl_ls_fecha_inicio { get; set; }
-
 		public DateTime tbl_ls_hora_inicio { get; set; }
 		public string tbl_ls_latitud { get; set; }
 		public string tbl_ls_longitud { get; set; }

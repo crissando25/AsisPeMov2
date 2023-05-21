@@ -14,7 +14,9 @@ namespace AsisPeMov2.menu
 	[XamlCompilation(XamlCompilationOptions.Compile)]
 	public partial class geolocalizacion : ContentPage
 	{
-		public geolocalizacion ()
+        double lati;
+        double longi;
+        public geolocalizacion ()
 		{
 			InitializeComponent ();
 		}

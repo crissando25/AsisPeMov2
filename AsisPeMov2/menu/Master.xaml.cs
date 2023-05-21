@@ -29,6 +29,11 @@ namespace AsisPeMov2.menu
             await App.MAsterDet.Detail.Navigation.PushAsync(new Registro());
 
         }
+        private async void btngeolocalizacion_Clicked(object sender, EventArgs e)
+        {
+            App.MAsterDet.IsPresented = false;//genera vista 
+            await App.MAsterDet.Detail.Navigation.PushAsync(new geolocalizacion());
 
+        }
     }
 }
