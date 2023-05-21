@@ -1,22 +1,21 @@
 ﻿<?xml version="1.0" encoding="utf-8" ?>
 <ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
              xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
-             x:Class="AsisPeMov2. menu. MostrarDatos"
+             x:Class="AsisPeMov2.menu.MostrarDatos"
              NavigationPage.HasNavigationBar="false">
     <ContentPage.Content>
         <StackLayout>
             <Label Text="MOSTAR DATOS"></Label>
 
-            <ListView x:Name="MyListView" ItemsSource="{Binding Nombre}" ItemSelected="MyListView_ItemSelected">
+            <ListView x:Name="MyListView" ItemsSource="{Binding Id }" ItemSelected="MyListView_ItemSelected">
                 <ListView.ItemTemplate>
                     <DataTemplate>
                         <ViewCell>
                             <StackLayout>
-                                <Label x:Name="lblbtl_login_id" Text="{Binding ID}"></Label>
                                 <Label x:Name="lblbtl_lg_usuario" Text="{Binding usuario}"></Label>
                                 <Label x:Name="lblbtl_lg_contraseña" Text="{Binding contraseña}"></Label>
                                 <Label x:Name="lblbtl_lg_correo" Text="{Binding correo}"></Label>
-                                <Label x:Name="lblbtl_lg_rol" Text="{Binding rol}"></Label>
+                                <Label x:Name="lblbtl_lg_rol" Text="{Binding Rol}"></Label>
                                 <Label x:Name="lbltbl_lg_observaciones" Text="{Binding rol}"></Label>
                                 
                             </StackLayout>

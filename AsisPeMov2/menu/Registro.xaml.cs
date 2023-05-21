@@ -19,6 +19,12 @@ namespace AsisPeMov2
     [XamlCompilation(XamlCompilationOptions.Compile)]
     public partial class Registro : ContentPage
     {
+        internal readonly string usuario;
+        internal readonly string contraseña;
+        internal readonly string correo;
+        internal readonly string Rol;
+        internal readonly string observaciones;
+
         public Registro()
         {
             InitializeComponent();
@@ -46,12 +52,12 @@ namespace AsisPeMov2
 
                 cliente.UploadValues("http://192.168.1.26/moviles/post.php", "POST", parametros);
              
-                DisplayAlert("ALERT", "Dato ingresado", "salir");
+                DisplayAlert("Guardado", "Dato ingresado", "salir");
 
             }
             catch (Exception ex)
             {
-                DisplayAlert("ALERTA", ex.Message, "cerrar");
+                DisplayAlert("Dato Erroneo", ex.Message, "cerrar");
             }
         }
         private void btnRegresar_Clicked(object sender, EventArgs e)
@@ -59,5 +65,9 @@ namespace AsisPeMov2
             Navigation.PushAsync(new Master());
         }
 
+        private void btnConsultar_Clicked(object sender, EventArgs e)
+        {
+            Navigation.PushModalAsync(new MostrarDatos());
+        }
     }
 }
