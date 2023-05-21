@@ -1,0 +1,31 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsisPeMov2.MainPage"
+             Title="Bienvenidos">
+       <ContentPage.ToolbarItems>
+           <ToolbarItem Text ="Menu"
+                     x:Name="Barra" 
+                     IconImageSource="menu.png" 
+                     Clicked="Barra_Clicked"></ToolbarItem>
+        </ContentPage.ToolbarItems>
+    <ContentPage.Content>
+        <Grid BackgroundColor="white" >
+            <StackLayout>
+                <Label Text="Registro de Asistencias En via"  FontSize="20" HorizontalTextAlignment="Center" TextColor="Blue" />
+                <Label Text="Versión 1.1"
+               FontSize="16"
+               HorizontalTextAlignment="Center"
+               TextColor="Blue"/>
+
+                <Image Source="AMtimagen.jpg" 
+               HeightRequest="160"
+               WidthRequest="160"
+               Margin="0,140,0,140"
+               HorizontalOptions="CenterAndExpand"/>
+                <Label Text="AGENCIA DE TRANSITO" FontSize="Body" HorizontalTextAlignment="Center" TextColor="Blue" />
+                <Button x:Name="btnAcceso" Text="Acceso" TextColor="White" BackgroundColor="#1690F4" Margin="30,20,30,0" Clicked="btnAcceso_Clicked" />
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>

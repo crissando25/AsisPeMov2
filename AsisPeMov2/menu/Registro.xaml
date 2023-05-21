@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsisPeMov2.Registro"
+             NavigationPage.HasNavigationBar="False">
+
+    <ContentPage.Content>
+        <Grid BackgroundColor="CornflowerBlue" >
+        <StackLayout>
+                
+                <Frame BackgroundColor="SkyBlue"     Padding="24" CornerRadius="0">
+                <Label Text="REGISTRO USUARIOS" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
+            </Frame>
+            <Label Text="▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄" />
+            
+                <Entry x:Name="txtbtl_login_id" Placeholder="Ingrese ID" Keyboard="Numeric" TextColor="white"/>
+                <Entry x:Name="txtbtl_lg_usuario"   Placeholder="Ingrese el Usuario" Keyboard="Text" TextColor="white"/>
+                <Entry x:Name="txtbtl_lg_contraseña" Placeholder="Ingrese Contraseña" TextColor="white"/>
+                <Entry x:Name="txtbtl_lg_correo" Placeholder="Ingrese Correo Electronico" Keyboard="Text" TextColor="white" />
+                <Entry x:Name="txtbtl_lg_rol" Placeholder="Ingrese Rol" Keyboard="Text" TextColor="white" />
+                <Entry x:Name="txttbl_lg_observaciones" Placeholder="Ingrese Observaciones" Keyboard="Text" TextColor="white" />
+           
+                <Grid>
+                <Grid.RowDefinitions>
+                    <RowDefinition/>
+                </Grid.RowDefinitions>
+
+                <Grid.ColumnDefinitions>
+                    <ColumnDefinition/>
+                    <ColumnDefinition/>
+                </Grid.ColumnDefinitions>
+                    <Button x:Name="btnIngresar" Text="REGISTRAR" Clicked="BtnIngresar_Clicked" Grid.Row="0" Grid.Column="0"/>
+                    <Button x:Name="btnRegresar" Text="REGRESAR" Clicked="btnRegresar_Clicked" Grid.Row="0" Grid.Column="1"/>
+            </Grid>
+        </StackLayout>
+       </Grid>
+    </ContentPage.Content>
+</ContentPage>

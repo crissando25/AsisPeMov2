@@ -1,0 +1,38 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsisPeMov2.Login"
+             Title="Acceso al sistema">
+    <ContentPage.Content>
+        <Grid BackgroundColor="white" >
+            <StackLayout>
+                <Image Source="AMtimagen.jpg" HeightRequest="60" WidthRequest="60"/>
+                <Image Source="Login.jpeg" />
+                <Grid Margin="50,0,50,40">
+                    <Grid.ColumnDefinitions>
+                        <ColumnDefinition Width="*"/>
+                        <ColumnDefinition Width="2*"/>
+                    </Grid.ColumnDefinitions>
+                    <Grid.RowDefinitions>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                        <RowDefinition></RowDefinition>
+                    </Grid.RowDefinitions>
+
+                    <Label Text="Usuario" VerticalOptions="Center" Grid.Column="0" Grid.Row="0" TextColor="BLue"/>
+                    <Entry Grid.Column="1" x:Name="txtUsu" Grid.Row="0" TextColor="black" />
+
+                    <Label Text="Contraseñ" VerticalOptions="Center" Grid.Column="0" Grid.Row="1" TextColor="blue" />
+                    <Entry Grid.Column="1" x:Name="txtCon" Grid.Row="1"   TextColor="Black" IsPassword="True" />
+
+                    <Button Text="Acceso" Grid.Column="0" Grid.Row="3" Grid.ColumnSpan="3" Clicked="Acceso_Clicked"/>
+                    <Button Text="Registrar" Grid.Column="0" Grid.Row="4" Grid.ColumnSpan="4" Clicked="Registrar_Clicked"/>
+                </Grid>
+                <Label Text="Nos esmeramos en la calidad de servicio" HorizontalTextAlignment="Center" TextColor="blue" />
+
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+ 
+</ContentPage>

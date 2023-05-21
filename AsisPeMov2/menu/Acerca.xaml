@@ -1,0 +1,53 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             xmlns:d="http://xamarin.com/schemas/2014/forms/design"
+             xmlns:mc ="http://schemas.openxmlformats.org/markup-compatibility/2006"
+             mc:Ignorable="d"
+             x:Class="AsisPeMov2.menu.Acerca">
+    <ContentPage.Content>
+        <Grid BackgroundColor="white" >
+            <StackLayout>
+              <Image Source="AMtimagen.jpg" 
+               HeightRequest="120"
+               WidthRequest="120"
+               Margin="0,10,0,14"
+               HorizontalOptions="CenterAndExpand"/>
+                <Label Text="MISION" FontSize="20" HorizontalTextAlignment="Center" TextColor="Blue" />
+                <Label Text="Gestionar de manera efectiva el control del" FontSize="15" 
+                       HorizontalTextAlignment="Start" 
+                       TextColor="Blue" />
+                <Label Text="transporte terrestre, tránsito y seguridad vial, con participación social," FontSize="15" 
+                       HorizontalTextAlignment="Start" 
+                       TextColor="Blue" />
+                <Label Text="mejorando la eficiencia y la seguridad de la operación de la red vial" FontSize="15" 
+                       HorizontalTextAlignment="Start" 
+                       TextColor="Blue" />
+                <Label Text=" y contribuyendo al mejoramiento de la calidad de vida de los habitantes del DMQ." FontSize="15" 
+                       HorizontalTextAlignment="Start" 
+                       TextColor="Blue" />
+               
+                <Label Text="VISION" FontSize="20" HorizontalTextAlignment="Center" TextColor="Blue" />
+
+                <Label Text="Llegar al 2024 siendo la entidad modelo de gestión para el control de tránsito," 
+                       FontSize="15" 
+                       HorizontalTextAlignment="Start" 
+                       TextColor="Blue"/>
+                <Label Text="transporte terrestre y seguridad vial de los 
+                       Gobiernos Autónomos Descentralizados,"
+                       FontSize="15" 
+                       HorizontalTextAlignment="Start" 
+                       TextColor="Blue"/>
+                <Label Text="mediante el cumplimiento de las metas e indicadores 
+                       de eficiencia y"
+                       FontSize="15" 
+                       HorizontalTextAlignment="Start" 
+                       TextColor="Blue"/>
+                <Label Text=" eficacia que contribuyan a mejorar la movilidad en el DMQ." 
+                       FontSize="15" 
+                       HorizontalTextAlignment="Start" 
+                       TextColor="Blue"/>
+            </StackLayout>
+        </Grid>
+    </ContentPage.Content>
+</ContentPage>
