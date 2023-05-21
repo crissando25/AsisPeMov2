@@ -12,9 +12,9 @@ namespace AsisPeMov2
         {
             InitializeComponent();
 
-            MainPage = new NavigationPage(new Login());
             MainPage = new NavigationPage(new MainPage());
-            MainPage = new PickerPage();
+            //MainPage = new NavigationPage(new MainPage());
+            //MainPage = new PickerPage();
 
 
         }

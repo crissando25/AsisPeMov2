@@ -31,6 +31,7 @@
                 </Grid.ColumnDefinitions>
                     <Button x:Name="btnIngresar" Text="REGISTRAR" Clicked="BtnIngresar_Clicked" Grid.Row="0" Grid.Column="0"/>
                     <Button x:Name="btnRegresar" Text="REGRESAR" Clicked="btnRegresar_Clicked" Grid.Row="0" Grid.Column="1"/>
+                    
             </Grid>
         </StackLayout>
        </Grid>
