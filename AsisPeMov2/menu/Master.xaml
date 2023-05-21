@@ -11,7 +11,7 @@
         <Button Text="Acercade" x:Name="btnAcercaDe" BackgroundColor="White" ImageSource="infor.ico" Clicked = "btnAcercaDe_Clicked"/>
         <Button Text="Registro_Usuario" x:Name="btnUsuarioNuevo" BackgroundColor="Aqua" ImageSource="usuario02.png" Clicked="btnUsuarioNuevo_Clicked"/>
         <!--<Button Text="Datos_Empleados" x:Name="btnEmpleados" BackgroundColor="Aqua" ImageSource="empleados.png" Clicked="btnEmpleados_Clicked"/>-->
-        <!--<Button Text="Geolocalizacion" x:Name="btnGeolocalizacion" BackgroundColor="#D0D3D4" ImageSource="ubi.ico" Clicked="btnGeolocalizacion_Clicked"/>-->
+            <Button Text="Geolocalizacion" x:Name="btnGeolocalizacion" BackgroundColor="#D0D3D4" ImageSource="ubi.ico" Clicked="btnGeolocalizacion_Clicked"/>
         </StackLayout>
     </ContentPage.Content>
 </ContentPage>

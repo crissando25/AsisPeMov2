@@ -1,0 +1,16 @@
+﻿<?xml version="1.0" encoding="utf-8" ?>
+<ContentPage xmlns="http://xamarin.com/schemas/2014/forms"
+             xmlns:x="http://schemas.microsoft.com/winfx/2009/xaml"
+             x:Class="AsisPeMov2.menu.geolocalizacion">
+    <ContentPage.Content>
+        <StackLayout>
+            <Grid BackgroundColor="white"  >
+                <Label Text="Latitud:" FontSize="20" HorizontalTextAlignment="Center" TextColor="Blue" Grid.Column="0" Grid.Row="0"></Label>
+                <Label x:Name="lat" FontSize="20" HorizontalTextAlignment="Center" TextColor="Blue" Grid.Column="0" Grid.Row="1"></Label>
+                <Label Text="Longitud: " FontSize="20" HorizontalTextAlignment="Center" TextColor="Blue" Grid.Column="0" Grid.Row="2"></Label>
+                <Label x:Name="lon" FontSize="20" HorizontalTextAlignment="Center" TextColor="Blue" Grid.Column="0" Grid.Row="3"></Label>
+                <Button x:Name="MostarMapa" Text="Mostrar mapa" Clicked="MostrarMapa" Grid.Row="5" Grid.Column="0"></Button>
+            </Grid>
+        </StackLayout>
+    </ContentPage.Content>
+</ContentPage>

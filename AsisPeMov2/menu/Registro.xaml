@@ -8,7 +8,7 @@
         <Grid BackgroundColor="CornflowerBlue" >
         <StackLayout>
                 
-                <Frame BackgroundColor="SkyBlue"     Padding="24" CornerRadius="0">
+                <Frame BackgroundColor="SkyBlue" Padding="24" CornerRadius="0">
                 <Label Text="REGISTRO USUARIOS" HorizontalTextAlignment="Center" TextColor="White" FontSize="20"/>
             </Frame>
             <Label Text="▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄▄" />
