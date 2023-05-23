@@ -29,7 +29,7 @@ namespace AsisPeMov2.menu
         public IEnumerable ItemsSource { get; set; }
         public async void obtener()
         {
-            var url = "http://192.168.1.26/moviles/post.php";
+            var url = "http://127.0.0.1/moviles/Login.php";
             var client = new HttpClient();
             var content = await client.GetStringAsync(url);
             List<AsisPeMov2.Registro> posts = JsonConvert.DeserializeObject<List<AsisPeMov2.Registro>>(content);
@@ -40,12 +40,11 @@ namespace AsisPeMov2.menu
 
         private async void Button_Clicked(object sender, EventArgs e)
         {
-            var url = "http://192.168.1.26/moviles/post.php";
+            var url = "http://127.0.0.1/moviles/Login.php";
             var client = new HttpClient();
             var content = await client.GetStringAsync(url);
             List < AsisPeMov2.Registro> posts = JsonConvert.DeserializeObject<List<AsisPeMov2.Registro>>(content);
             _post = new ObservableCollection<AsisPeMov2.Registro>(posts);
-
             MyListView.ItemsSource = _post;
         }
 

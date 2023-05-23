@@ -33,8 +33,7 @@
                 </Grid.ColumnDefinitions>
                     <Button x:Name="btnIngresar" Text="REGISTRAR" Clicked="BtnIngresar_Clicked" Grid.Row="0" Grid.Column="0"/>
                     <Button x:Name="btnRegresar" Text="REGRESAR" Clicked="btnRegresar_Clicked" Grid.Row="0" Grid.Column="1"/>
-                    <!--<Button x:Name="btnConsultar" Text="CONSULTAR" Clicked="btnConsultar_Clicked" Grid.Row="1" Grid.Column="1"/>-->
-
+                    <Button x:Name="btnMostrar" Text="MOSTRAR" Clicked="btnMostrar_Clicked" Grid.Row="1" Grid.Column="1"></Button>
                 </Grid>
         </StackLayout>
        </Grid>

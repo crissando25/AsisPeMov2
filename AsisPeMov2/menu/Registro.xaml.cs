@@ -1,4 +1,5 @@
-﻿using AsisPeMov2.menu;
+﻿using AsisPeMov2;
+using AsisPeMov2.menu;
 using Newtonsoft.Json;
 using System;
 using System.Collections;
@@ -14,9 +15,14 @@ using Xamarin.Forms;
 using Xamarin.Forms.Xaml;
 using static System.Net.Mime.MediaTypeNames;
 
+//[assembly:Xamarin.Forms.Dependency(typeof(Mensaje_Androd))]
+
 namespace AsisPeMov2
 {
     [XamlCompilation(XamlCompilationOptions.Compile)]
+
+
+    
     public partial class Registro : ContentPage
     {
         internal readonly string usuario;
@@ -31,13 +37,13 @@ namespace AsisPeMov2
             BindingContext = new Login();
            
         }
-        private void btnRegistro_Clicked(object sender, EventArgs e)
+        private async  void btnRegistro_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new Registro());
+             await Navigation.PushModalAsync(new Registro());
         }
 
         
-        private void BtnIngresar_Clicked(object sender, EventArgs e)
+        private async void BtnIngresar_Clicked(object sender, EventArgs e)
         {
             try
             {
@@ -49,25 +55,23 @@ namespace AsisPeMov2
                 parametros.Add("Correo", txtbtl_lg_correo.Text);
                 parametros.Add("Rol", txtbtl_lg_rol.Text);
                 parametros.Add("Observaciones", txttbl_lg_observaciones.Text);
-
-                cliente.UploadValues("http://192.168.1.26/moviles/post.php", "POST", parametros);
-             
-                DisplayAlert("Guardado", "Dato ingresado", "salir");
+                cliente.UploadValues("http://127.0.0.1/moviles/Login.php", "POST", parametros);
+                  await DisplayAlert("Guardado", "Dato ingresado", "salir");
 
             }
             catch (Exception ex)
             {
-                DisplayAlert("Dato Erroneo", ex.Message, "cerrar");
-            }
+                await DisplayAlert("Dato Erroneo", ex.Message, "cerrar");
+            } 
         }
-        private void btnRegresar_Clicked(object sender, EventArgs e)
+        private async void btnRegresar_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushAsync(new Master());
+            await Navigation.PushAsync(new Master());
         }
 
-        private void btnConsultar_Clicked(object sender, EventArgs e)
+        private async void btnMostrar_Clicked(object sender, EventArgs e)
         {
-            Navigation.PushModalAsync(new MostrarDatos());
+            await Navigation.PushAsync(new MostrarDatos());
         }
     }
 }
